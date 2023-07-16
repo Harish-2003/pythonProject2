@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        td{
+        padding:10px;
+        font-size:50px;
+        }
+    </style>
+</head>
+<body>
+Main page
+<table>
+{% for i in values %}
+<tr><td>{{i.name}}</td><td><a href="{{i.id}}">view </a><a href="added/{{i.id}}">add to cart</a></td>
+{% endfor %}
+</table>
+<a href="view">viewcart</a>
+</body>
+</html>
